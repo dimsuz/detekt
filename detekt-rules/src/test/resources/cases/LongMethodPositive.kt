@@ -18,5 +18,14 @@ class LongMethodPositive {
 			println()
 			println()
 		}
+
+	}
+
+	fun longMethodSingleStatement() {
+		if ("one" === "three") {
+			println("weird")
+		} else {
+			println("sane")
+		}
 	}
 }

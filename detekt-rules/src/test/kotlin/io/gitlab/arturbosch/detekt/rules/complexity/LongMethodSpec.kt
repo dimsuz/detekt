@@ -16,9 +16,9 @@ class LongMethodSpec : SubjectSpek<LongMethod>({
 
 	describe("nested functions can be long") {
 
-		it("should find two long methods") {
+		it("should find three long methods") {
 			val path = Case.LongMethodPositive.path()
-			assertThat(subject.lint(path)).hasSize(2)
+			assertThat(subject.lint(path)).hasSize(3)
 		}
 
 		it("should not find too long methods") {
